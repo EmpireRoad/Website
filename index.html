@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Road Brewery - Craft Beers & Tastings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Age Gate Modal -->
+    <div id="ageGateModal" class="age-gate-modal">
+        <div class="age-gate-content">
+            <h1>Age Verification</h1>
+            <p>You must be 18 years or older to enter this site.</p>
+            <p>Are you 18 years or older?</p>
+            <div class="age-gate-buttons">
+                <button id="yesBtn" class="btn btn-primary">Yes, I'm 18+</button>
+                <button id="noBtn" class="btn btn-secondary">No, I'm Under 18</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>Empire Road Brewery</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#beers">Our Beers</a></li>
+                <li><a href="#tastings">Tastings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content (Hidden until age verified) -->
+    <div id="mainContent" class="main-content" style="display: none;">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Empire Road Brewery</h1>
+                <p>Crafting Excellence in Every Pint</p>
+                <button class="btn btn-primary btn-large">Visit Us Today</button>
+            </div>
+        </section>
+
+        <!-- Our Beers Section -->
+        <section id="beers" class="beers">
+            <div class="container">
+                <h2>Our Craft Beers</h2>
+                <div class="beers-grid">
+                    
+                    <!-- IPA -->
+                    <div class="beer-card">
+                        <div class="beer-icon">🍺</div>
+                        <h3>IPA</h3>
+                        <p class="beer-type">India Pale Ale</p>
+                        <p>Bold, hoppy, and full of character. Our signature IPA delivers a robust blend of citrus and pine notes with a smooth finish.</p>
+                        <div class="beer-details">
+                            <span class="abv">ABV: 6.5%</span>
+                            <span class="ibu">IBU: 65</span>
+                        </div>
+                    </div>
+
+                    <!-- Hazy -->
+                    <div class="beer-card">
+                        <div class="beer-icon">🌫️</div>
+                        <h3>Hazy IPA</h3>
+                        <p class="beer-type">New England Style IPA</p>
+                        <p>Smooth and juicy with a soft mouthfeel. Our Hazy IPA is bursting with tropical and fruity hop flavors that linger beautifully.</p>
+                        <div class="beer-details">
+                            <span class="abv">ABV: 6.8%</span>
+                            <span class="ibu">IBU: 45</span>
+                        </div>
+                    </div>
+
+                    <!-- Stout -->
+                    <div class="beer-card">
+                        <div class="beer-icon">🌑</div>
+                        <h3>Stout</h3>
+                        <p class="beer-type">Imperial Stout</p>
+                        <p>Dark, rich, and complex. Notes of chocolate, coffee, and roasted malt create a deeply satisfying experience for stout enthusiasts.</p>
+                        <div class="beer-details">
+                            <span class="abv">ABV: 7.2%</span>
+                            <span class="ibu">IBU: 55</span>
+                        </div>
+                    </div>
+
+                    <!-- Lager -->
+                    <div class="beer-card">
+                        <div class="beer-icon">❄️</div>
+                        <h3>Lager</h3>
+                        <p class="beer-type">Crisp Pilsner</p>
+                        <p>Clean, crisp, and refreshing. Our Lager is perfectly balanced with subtle malt sweetness and a clean, dry finish.</p>
+                        <div class="beer-details">
+                            <span class="abv">ABV: 5.2%</span>
+                            <span class="ibu">IBU: 35</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tastings Section -->
+        <section id="tastings" class="tastings">
+            <div class="container">
+                <h2>Beer Tastings</h2>
+                <p class="section-subtitle">Experience our craft beers with guided tastings and expert recommendations.</p>
+                
+                <div class="tastings-info">
+                    <div class="tasting-card">
+                        <h3>On-Tap Experience</h3>
+                        <p>Visit our taproom and enjoy fresh, cold drafts of all our signature beers. Our knowledgeable staff is ready to help you find your favorite.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                    <div class="tasting-card">
+                        <h3>Guided Tastings</h3>
+                        <p>Join one of our expert-led tasting sessions to discover the nuances and flavors that make each beer special.</p>
+                        <button class="btn btn-primary">Reserve a Tasting</button>
+                    </div>
+                    <div class="tasting-card">
+                        <h3>Coming Soon: Online Shop</h3>
+                        <p>Soon you'll be able to order your favorite Empire Road beers online for delivery to your home.</p>
+                        <button class="btn btn-secondary">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Visit Us</h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Location</h3>
+                        <p>Empire Road Brewery</p>
+                        <a href="https://www.google.com/maps/place/Empire+Road+Brewery" target="_blank">View on Google Maps</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>🍻 On Untappd</h3>
+                        <p>Follow us for beer updates and reviews</p>
+                        <a href="https://untappd.com/EmpireRoadBrewery" target="_blank">Visit Untappd</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Contact</h3>
+                        <p>Questions? Get in touch with us!</p>
+                        <a href="mailto:info@empireroadbrewery.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Empire Road Brewery. All rights reserved.</p>
+                <p>Please drink responsibly. Must be 18+ to enter.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Redirect Page (shown if user is under 18) -->
+    <div id="underage" class="underage-content" style="display: none;">
+        <div class="container">
+            <h1>Access Denied</h1>
+            <p>Sorry, you must be 18 years or older to access this site.</p>
+            <p>Thank you for understanding!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
